@@ -11,10 +11,6 @@
   border: var(--tweet-border);
   border-radius: 12px;
   margin: var(--tweet-container-margin);
-  background-color: var(--tweet-bg-color);
-}
-.root:hover {
-  background-color: var(--tweet-bg-color-hover);
 }
 .article {
   position: relative;
