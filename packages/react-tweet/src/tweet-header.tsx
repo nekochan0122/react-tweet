@@ -83,7 +83,7 @@ export const TweetHeader = ({ tweet, components }: Props) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Follow
+              追蹤
             </a>
           </div>
         </div>

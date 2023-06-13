@@ -1,6 +1,7 @@
 'use client'
 
 import format from 'date-fns/format/index.js'
+import zhTW from 'date-fns/locale/zh-TW/index.js'
 import type { Tweet } from './api/index.js'
 import { getTweetUrl } from './utils.js'
 import useMounted from './lib/use-mounted.js'
@@ -17,10 +18,14 @@ export const TweetInfoCreatedAt = ({ tweet }: { tweet: Tweet }) => {
       href={getTweetUrl(tweet)}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label={format(createdAt, 'h:mm a · MMM d, y')}
+      aria-label={format(createdAt, 'h:mm a · MMM d, y', {
+        locale: zhTW,
+      })}
     >
       <time dateTime={createdAt.toISOString()}>
-        {format(createdAt, 'h:mm a · MMM d, y')}
+        {format(createdAt, 'h:mm a · MMM d, y', {
+          locale: zhTW,
+        })}
       </time>
     </a>
   )

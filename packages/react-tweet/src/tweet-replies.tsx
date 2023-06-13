@@ -5,11 +5,9 @@ import s from './tweet-replies.module.css'
 
 export const TweetReplies = ({ tweet }: { tweet: Tweet }) => {
   const repliesLinkText = useMemo(() => {
-    if (tweet.conversation_count === 0) return 'Read more on Twitter'
+    if (tweet.conversation_count === 0) return '在 Twitter 上查看更多回覆'
 
-    return tweet.conversation_count === 1
-      ? `Read ${formatNumber(tweet.conversation_count)} reply`
-      : `Read ${formatNumber(tweet.conversation_count)} replies`
+    return `查看 ${formatNumber(tweet.conversation_count)} 則回覆`
   }, [tweet.conversation_count])
 
   return (

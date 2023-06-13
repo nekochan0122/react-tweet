@@ -11,7 +11,7 @@ export const TweetInfo = ({ tweet }: { tweet: Tweet }) => {
         href="https://help.twitter.com/en/twitter-for-websites-ads-info-and-privacy"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Twitter for Websites, Ads Information and Privacy"
+        aria-label="Twitter for Websites, Ads 資訊與隱私"
       >
         <svg viewBox="0 0 24 24" aria-hidden="true" className={s.infoIcon}>
           <g>

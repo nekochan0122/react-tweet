@@ -8,8 +8,8 @@ type Props = {
 export const TweetNotFound = (_props: Props) => (
   <TweetContainer>
     <div className={styles.root}>
-      <h3>Tweet not found</h3>
-      <p>The embedded tweet could not be found…</p>
+      <h3>推文不存在</h3>
+      <p>嵌入的推文不存在…</p>
     </div>
   </TweetContainer>
 )

@@ -9,6 +9,6 @@ export const TweetInReplyTo = ({ tweet }: { tweet: Tweet }) => (
     target="_blank"
     rel="noopener noreferrer"
   >
-    Replying to @{tweet.in_reply_to_screen_name}
+    回覆給 @{tweet.in_reply_to_screen_name}
   </a>
 )

@@ -13,7 +13,7 @@ export const TweetActions = ({ tweet }: { tweet: Tweet }) => {
         href={getLikeUrl(tweet)}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label={`Like. This Tweet has ${favoriteCount} likes`}
+        aria-label={`這則推文擁有 ${favoriteCount} 個喜歡`}
       >
         <div className={s.likeIconWrapper}>
           <svg viewBox="0 0 24 24" className={s.likeIcon} aria-hidden="true">
@@ -29,7 +29,7 @@ export const TweetActions = ({ tweet }: { tweet: Tweet }) => {
         href={getReplyUrl(tweet)}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Reply to this Tweet on Twitter"
+        aria-label="在 Twitter 上回覆這則推文"
       >
         <div className={s.replyIconWrapper}>
           <svg viewBox="0 0 24 24" className={s.replyIcon} aria-hidden="true">
@@ -38,7 +38,7 @@ export const TweetActions = ({ tweet }: { tweet: Tweet }) => {
             </g>
           </svg>
         </div>
-        <span className={s.replyText}>Reply</span>
+        <span className={s.replyText}>回覆</span>
       </a>
       <TweetActionsCopy tweet={tweet} />
     </div>

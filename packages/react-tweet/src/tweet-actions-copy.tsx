@@ -47,7 +47,7 @@ export const TweetActionsCopy = ({ tweet }: { tweet: Tweet }) => {
         )}
       </div>
       <span className={s.copyText}>
-        {copied ? 'Copied!' : copyAllText ? 'Copy link to Tweet' : 'Copy link'}
+        {copied ? '複製成功' : copyAllText ? '複製鏈接' : '複製鏈接'}
       </span>
     </button>
   )

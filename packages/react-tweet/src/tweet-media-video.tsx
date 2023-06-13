@@ -40,7 +40,7 @@ export const TweetMediaVideo = ({ media }: Props) => {
         <button
           type="button"
           className={s.videoButton}
-          aria-label="View video on Twitter"
+          aria-label="播放影片"
           onClick={(e) => {
             const video = e.currentTarget.previousSibling as HTMLMediaElement
 
